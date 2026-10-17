@@ -1,0 +1,27 @@
+name: "action-pypi-version"
+author: sarnold
+description: "Get latest pypi version for the given package"
+
+branding:
+  icon: "package"
+  color: "green"
+
+inputs:
+  github_token:
+    description: 'GitHub token for API requests'
+    default: ${{ github.token }}
+    required: false
+  package_name:
+    description: "(python) package name to query (default: none)"
+    default: ""
+    required: true
+
+outputs:
+  package_version:
+    description: "Latest found package version in the registry."
+  package_name_version:
+    description: "Latest found package name-version string."
+
+runs:
+  using: "docker"
+  image: "Dockerfile"

@@ -1,0 +1,40 @@
+# To install the git pre-commit hook run:
+#   pre-commit install --install-hooks
+# To update the pre-commit hooks run:
+#   pre-commit autoupdate
+# exclude: '^(.tox/|.*\.sh$)'
+repos:
+  - repo: meta
+    hooks:
+      - id: check-useless-excludes
+      - id: check-hooks-apply
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      # - id: check-json
+      - id: check-yaml
+
+  - repo: https://github.com/PyCQA/doc8
+    rev: v2.0.0
+    hooks:
+      - id: doc8
+        args:
+          - '--max-line-length=90'
+          - '--ignore=D001'
+
+  - repo: https://github.com/pre-commit/pygrep-hooks
+    rev: v1.10.0
+    hooks:
+      - id: rst-backticks
+      - id: rst-directive-colons
+      - id: rst-inline-touching-normal
+
+  - repo: https://github.com/lovesegfault/beautysh
+    rev: v6.4.3
+    hooks:
+      - id: beautysh
