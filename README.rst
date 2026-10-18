@@ -1,5 +1,5 @@
-(Gihub) action-pypi-version
-===========================
+(Github) action-pypi-version
+============================
 
 |CI| |pre|
 
@@ -19,7 +19,7 @@ By default this action will retrieve the latest version and output both the
 <version> string and the full <name-version> string.
 
 .. _pypi: https://pypi.org/
-.. _pip-versions: https://github.com/anthonyharrison/distro2SBOM
+.. _pip-versions: https://github.com/willemt/pip-versions/
 
 Usage
 -----
@@ -54,7 +54,7 @@ Default configuration
           package_name: asterisklint
   ...
 
-Somwhere else in the same job::
+Somewhere else in the same job::
 
       - name: Display version
         run: |
