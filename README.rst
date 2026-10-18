@@ -90,18 +90,18 @@ property to ``ubuntu-latest``::
 .. _Ubuntu: https://ubuntu.com/
 
 
-.. |CI| image:: https://github.com/sarnold/action-rpm2sbom/actions/workflows/main.yml/badge.svg
-    :target: https://github.com/sarnold/action-rpm2sbom/actions/workflows/main.yml
+.. |CI| image:: https://github.com/sarnold/action-pypi-version/actions/workflows/test.yml/badge.svg
+    :target: https://github.com/sarnold/action-pypi-version/actions/workflows/test.yml
     :alt: CI test status
 
 .. |pre| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&amp;logoColor=white
    :target: https://github.com/pre-commit/pre-commit
    :alt: pre-commit
 
-.. |tag| image:: https://img.shields.io/github/v/tag/sarnold/action-rpm2sbom?color=green&include_prereleases&label=latest%20release
-    :target: https://github.com/sarnold/action-rpm2sbom/releases
+.. |tag| image:: https://img.shields.io/github/v/tag/sarnold/action-pypi-version?color=green&include_prereleases&label=latest%20release
+    :target: https://github.com/sarnold/action-pypi-version/releases
     :alt: GitHub tag
 
-.. |license| image:: https://img.shields.io/github/license/sarnold/action-rpm2sbom
-    :target: https://github.com/sarnold/action-rpm2sbom/blob/master/LICENSE
+.. |license| image:: https://img.shields.io/github/license/sarnold/action-pypi-version
+    :target: https://github.com/sarnold/action-pypi-version/blob/master/LICENSE
     :alt: License
